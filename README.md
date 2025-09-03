@@ -1,68 +1,74 @@
-# Playwright MCP Server Documentation
+# Playwright MCP Template
 
-This documentation captures all learnings, configurations, and best practices from using the Playwright MCP (Model Context Protocol) server for web automation tasks.
+[![GitHub Template](https://img.shields.io/badge/GitHub-Template-blue?logo=github)](https://github.com/your-username/playwright-mcp-template)
+[![Playwright](https://img.shields.io/badge/Playwright-1.40+-green?logo=playwright)](https://playwright.dev/)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-orange)](https://modelcontextprotocol.io/)
 
-## Overview
+> **Complete template for Playwright MCP (Model Context Protocol) automation projects**
 
-The Playwright MCP server enables browser automation through Claude/AI agents, allowing for web scraping, form filling, navigation, and interaction with web applications. This setup was used to automate scholarship discovery and application processes on the UdeM bourses portal.
+This template provides everything you need to get started with browser automation using Playwright and the Model Context Protocol. It includes production-ready configurations, comprehensive examples, PowerShell scripts, and testing frameworks.
 
-## Quick Links
+## 🚀 Quick Start
 
-- [Setup Guide](./setup.md) - Complete installation and configuration
-- [Configuration Files](./config/) - All config files and templates
-- [Usage Examples](./examples/) - Real-world usage patterns
-- [Troubleshooting](./troubleshooting.md) - Common issues and solutions
-- [Best Practices](./best_practices.md) - Lessons learned and recommendations
+1. **Use this template** to create a new repository
+2. **Clone** your new repository locally
+3. **Run setup**: .\scripts\start_mcp.ps1
+4. **Start automating** with the provided examples!
 
-## Project Structure
+## 📁 What's Included
 
-```
-.mcp/
-├── playwright_general/
-│   ├── README.md                 # This file
-│   ├── setup.md                  # Installation and setup guide
-│   ├── best_practices.md         # Usage recommendations
-│   ├── troubleshooting.md        # Common issues and fixes
-│   ├── config/
-│   │   ├── package.json          # Node.js dependencies
-│   │   ├── .playwright-mcprc     # MCP server config
-│   │   └── browser_config.json   # Browser settings
-│   ├── examples/
-│   │   ├── navigation.md         # Navigation examples
-│   │   ├── form_filling.md       # Form interaction patterns
-│   │   ├── data_extraction.md    # Scraping techniques
-│   │   └── authentication.md     # Login/session management
-│   └── scripts/
-│       ├── start_mcp.ps1         # PowerShell startup script
-│       ├── cleanup.ps1           # Process cleanup script
-│       └── test_connection.ps1   # Connection testing
-```
+- **📖 Documentation**: Complete setup guides and best practices
+- **⚙️ Configuration**: Production-ready config files and environment setup
+- **💡 Examples**: Real-world automation patterns and techniques
+- **🔧 Scripts**: PowerShell automation scripts for Windows
+- **🧪 Testing**: Automated testing framework for validation
+- **🛠️ Troubleshooting**: Common issues and solutions
 
-## Key Capabilities Demonstrated
+## 📋 Features
 
-1. **Web Navigation & Interaction**
-   - Page navigation and URL handling
-   - Element clicking and form interaction
-   - Text input and form submission
+- ✅ **Zero-config setup** - Works out of the box
+- ✅ **Windows PowerShell** - Native Windows support
+- ✅ **Production ready** - Based on real-world projects
+- ✅ **Comprehensive examples** - Navigation, forms, data extraction
+- ✅ **Testing included** - Automated validation suite
+- ✅ **Error handling** - Robust troubleshooting tools
 
-2. **Data Extraction & Scraping**
-   - HTML element selection and data extraction
-   - Table scraping and structured data collection
-   - Dynamic content handling
+## 🔧 Prerequisites
 
-3. **Session Management**
-   - Login processes and authentication
-   - Session persistence and cookie handling
-   - Multi-step workflows
+- **Node.js 16+**
+- **PowerShell 5.1+** or **PowerShell Core 7+**
+- **Windows 10/11** (scripts optimized for Windows)
 
-4. **Error Handling & Recovery**
-   - Network error recovery
-   - Element waiting and timeout handling
-   - Process cleanup and restart procedures
+## 📚 Documentation
 
-## Next Steps
+| File | Description |
+|------|-------------|
+| [setup.md](setup.md) | Installation and configuration guide |
+| [est_practices.md](best_practices.md) | Optimization techniques and patterns |
+| [	roubleshooting.md](troubleshooting.md) | Common issues and solutions |
 
-1. Review the [Setup Guide](./setup.md) for complete installation
-2. Examine [Configuration Files](./config/) for project-specific settings
-3. Study [Usage Examples](./examples/) for implementation patterns
-4. Refer to [Best Practices](./best_practices.md) for optimization tips
+## 🎯 Use Cases
+
+Perfect for automating:
+- **Web scraping** and data extraction
+- **Form filling** and submission
+- **Testing workflows** and validation
+- **Scholarship applications** (original use case!)
+- **E-commerce interactions**
+- **Documentation generation**
+
+## 🤝 Contributing
+
+Improvements and additional examples are welcome! Please see our contributing guidelines.
+
+## 📄 License
+
+This template is released under the MIT License. See [LICENSE](LICENSE) for details.
+
+## 🙏 Acknowledgments
+
+Based on successful automation of University of Montreal scholarship applications and refined through real-world usage.
+
+---
+
+**Ready to automate? Let's get started! 🎉**
