@@ -1,0 +1,44 @@
+{
+  "logging": {
+    "level": "info",
+    "format": "json",
+    "outputs": [
+      {
+        "type": "file",
+        "filename": "logs/mcp-playwright.log",
+        "maxSize": "10MB",
+        "maxFiles": 5
+      },
+      {
+        "type": "console",
+        "colorize": true
+      }
+    ]
+  },
+  "debug": {
+    "playwright": {
+      "enabled": false,
+      "categories": [
+        "browser",
+        "api",
+        "protocol"
+      ]
+    },
+    "mcp": {
+      "enabled": true,
+      "verbose": false
+    }
+  },
+  "error_handling": {
+    "capture_screenshots": true,
+    "screenshot_dir": "logs/error-screenshots",
+    "capture_page_source": true,
+    "page_source_dir": "logs/error-html",
+    "max_error_files": 50
+  },
+  "performance": {
+    "track_timing": true,
+    "slow_operation_threshold": "5s",
+    "memory_monitoring": false
+  }
+}

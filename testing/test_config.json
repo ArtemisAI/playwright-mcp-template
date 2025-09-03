@@ -1,0 +1,66 @@
+{
+  "name": "playwright-mcp-tests",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test_runner.js",
+    "test:basic": "node test_runner.js --suite basic",
+    "test:navigation": "node test_runner.js --suite navigation",
+    "test:forms": "node test_runner.js --suite forms",
+    "test:extraction": "node test_runner.js --suite extraction",
+    "test:stress": "node test_runner.js --suite stress"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  },
+  "test_suites": {
+    "basic": {
+      "description": "Basic MCP server functionality",
+      "tests": [
+        "test_server_startup",
+        "test_browser_launch",
+        "test_page_navigation",
+        "test_server_shutdown"
+      ]
+    },
+    "navigation": {
+      "description": "Page navigation and URL handling",
+      "tests": [
+        "test_navigate_to_url",
+        "test_back_forward",
+        "test_reload_page",
+        "test_handle_redirects",
+        "test_handle_popups"
+      ]
+    },
+    "forms": {
+      "description": "Form interaction and submission",
+      "tests": [
+        "test_fill_text_input",
+        "test_select_dropdown",
+        "test_checkbox_radio",
+        "test_file_upload",
+        "test_form_submission"
+      ]
+    },
+    "extraction": {
+      "description": "Data extraction and scraping",
+      "tests": [
+        "test_extract_text",
+        "test_extract_attributes",
+        "test_extract_table_data",
+        "test_extract_links",
+        "test_handle_dynamic_content"
+      ]
+    },
+    "stress": {
+      "description": "Performance and stability testing",
+      "tests": [
+        "test_multiple_tabs",
+        "test_long_running_session",
+        "test_memory_usage",
+        "test_error_recovery"
+      ]
+    }
+  }
+}

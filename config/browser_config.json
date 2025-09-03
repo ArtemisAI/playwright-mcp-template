@@ -1,0 +1,36 @@
+{
+  "browserSettings": {
+    "defaultBrowser": "chromium",
+    "headless": false,
+    "slowMo": 100,
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+  },
+  "networkSettings": {
+    "timeout": 30000,
+    "retryAttempts": 3,
+    "waitForNetworkIdle": true,
+    "ignoreHTTPSErrors": true
+  },
+  "behaviorSettings": {
+    "screenshotOnError": true,
+    "traceOnError": true,
+    "automaticCleanup": true,
+    "elementWaitTimeout": 10000,
+    "pageLoadTimeout": 30000
+  },
+  "cacheSettings": {
+    "cacheDirectory": ".mcp-cache",
+    "persistSessions": true,
+    "clearCacheOnStart": false
+  },
+  "debugSettings": {
+    "enableLogging": true,
+    "verboseLogging": false,
+    "saveScreenshots": true,
+    "screenshotDirectory": "screenshots"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "playwright-mcp-project",
+  "version": "1.0.0",
+  "description": "Playwright MCP server for web automation",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx --package @modelcontextprotocol/server-playwright playwright-mcp --cache-dir .mcp-cache",
+    "start-headless": "npx --package @modelcontextprotocol/server-playwright playwright-mcp --cache-dir .mcp-cache --headless",
+    "install-browsers": "npx playwright install",
+    "test": "npx playwright test",
+    "cleanup": "taskkill /f /im chrome.exe 2>nul & taskkill /f /im node.exe /fi \"WINDOWTITLE eq playwright-mcp*\" 2>nul"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server-playwright": "^0.6.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "playwright",
+    "mcp",
+    "automation",
+    "web-scraping",
+    "browser-automation"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
