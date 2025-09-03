@@ -1,0 +1,29 @@
+name: Test Template Setup
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-setup:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install @modelcontextprotocol/server-playwright
+      
+    - name: Install Playwright browsers
+      run: npx playwright install chromium
+      
+    - name: Run basic tests
+      run: node testing/test_runner.js --suite basic
+
